@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-upper {
+  background: #2f2e41;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-text {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 92px;
+  margin: 40px;
+  margin-left: 80px;
+  letter-spacing: 2px;
+}
+
+.header-image {
+  margin: 70px;
+}
+
+.header-lower {
+  color: #3f3d56;
+  font-size: 55px;
+  font-weight: 600;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.header-divider {
+  width: 90%;
+  height: 2px;
+  color: #d0cde1;
+}
