@@ -7,7 +7,23 @@ const API_URL = "https://api.github.com/users/";
 // keep storage as a map
 const developers = {};
 
-router.get("/", (req, res) => {});
+router.get("/", (req, res) => {
+  if (Object.keys(developers).length > 0) {
+    const developersReducedList = [];
+    Object.keys(developers).forEach(id => {
+      const developer = {
+        id,
+        avatar_url: developers[id].avatar_url,
+      };
+      developersReducedList.push(developer);
+    });
+    return res.status(200).send(developersReducedList);
+  } else {
+    return res.status(404).send({
+      msg: "No user has been added yet!",
+    });
+  }
+});
 
 router.get("/:id", (req, res) => {
   const isPresent = developers[req.params.id];
@@ -19,6 +35,13 @@ router.get("/:id", (req, res) => {
     return res.status(404).send({
       msg: "User does not exist",
     });
+});
+
+router.delete("/:id", (req, res) => {
+  delete developers[req.params.id];
+  return res.status(204).send({
+    msg: "User Deleted!",
+  });
 });
 
 router.post("/", (req, res) => {
