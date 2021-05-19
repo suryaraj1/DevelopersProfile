@@ -6,3 +6,21 @@
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
 }
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: transparent;
+  transition: 0.2s ease;
+  background-color: rgba(155, 155, 155, 0.5);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #7c639f;
+}
