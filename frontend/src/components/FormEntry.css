@@ -1,0 +1,33 @@
+.form-entry-icon-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-entry-icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+}
+
+.form-entry-icon-name {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.form-entry-input {
+  outline: none;
+  width: 600px;
+  height: 50px;
+  padding: 6px 12px;
+  border: 1px solid #d0cde1;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: 0.35s;
+  font-size: 20px;
+}
+
+.form-entry-input:focus {
+  border: 1px solid #7c639f;
+}
