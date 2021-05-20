@@ -10,8 +10,70 @@ import TwitterLogo from "../static/iconfinder_2018_social_media_popular_app_logo
 import MediumLogo from "../static/iconfinder_Circled_Medium_svg5_5279113.png";
 
 class DeveloperInfo extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      githubHandle: "",
+      codechefHandle: "",
+      hackerrankHandle: "",
+      linkedinHandle: "",
+      twitterHandle: "",
+      mediumHandle: "",
+    };
+  }
+
+  onInputGithub = e => {
+    this.setState({
+      githubHandle: e.target.value,
+    });
+  };
+
+  onInputCodechef = e => {
+    this.setState({
+      codechefHandle: e.target.value,
+    });
+  };
+
+  onInputHackerrank = e => {
+    this.setState({
+      hackerrankHandle: e.target.value,
+    });
+  };
+
+  onInputCodechef = e => {
+    this.setState({
+      codechefHandle: e.target.value,
+    });
+  };
+
+  onInputLinkedin = e => {
+    this.setState({
+      linkedinHandle: e.target.value,
+    });
+  };
+
+  onInputTwitter = e => {
+    this.setState({
+      twitterHandle: e.target.value,
+    });
+  };
+
+  onInputMedium = e => {
+    this.setState({
+      mediumHandle: e.target.value,
+    });
+  };
+
   render() {
     const { showModal } = this.props;
+    const {
+      githubHandle,
+      codechefHandle,
+      linkedinHandle,
+      twitterHandle,
+      hackerrankHandle,
+      mediumHandle,
+    } = this.state;
     return (
       <ReactModal isOpen={showModal} onRequestClose className="signup-modal">
         <form type="submit">
@@ -21,17 +83,50 @@ class DeveloperInfo extends React.Component {
               <hr className="signup-divider" />
             </div>
             <div className="form-entry-wrapper">
-              <FormEntry icon={GithubLogo} name="Github" mandatory={true} />
-              <FormEntry icon={LinkedinLogo} name="Linkedin" />
-              <FormEntry icon={CodechefLogo} name="Codechef" />
-              <FormEntry icon={HackerrankLogo} name="Hackerrank" />
-              <FormEntry icon={TwitterLogo} name="Twitter" />
-              <FormEntry icon={MediumLogo} name="Medium" />
+              <FormEntry
+                icon={GithubLogo}
+                name="Github"
+                value={githubHandle}
+                mandatory={true}
+                onInput={this.onInputGithub}
+              />
+              <FormEntry
+                icon={LinkedinLogo}
+                name="Linkedin"
+                value={linkedinHandle}
+                onInput={this.onInputLinkedin}
+              />
+              <FormEntry
+                icon={CodechefLogo}
+                name="Codechef"
+                value={codechefHandle}
+                onInput={this.onInputCodechef}
+              />
+              <FormEntry
+                icon={HackerrankLogo}
+                name="Hackerrank"
+                value={hackerrankHandle}
+                onInput={this.onInputHackerrank}
+              />
+              <FormEntry
+                icon={TwitterLogo}
+                name="Twitter"
+                value={twitterHandle}
+                onInput={this.onInputTwitter}
+              />
+              <FormEntry
+                icon={MediumLogo}
+                name="Medium"
+                value={mediumHandle}
+                onInput={this.onInputMedium}
+              />
             </div>
             <hr className="signup-divider" />
             <div className="signup-btn-container">
               <button className="signup-btn close">Close</button>
-              <button className="signup-btn submit">Submit</button>
+              <button className="signup-btn submit" type="submit">
+                Submit
+              </button>
             </div>
           </div>
         </form>

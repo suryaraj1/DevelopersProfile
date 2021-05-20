@@ -3,7 +3,7 @@ import "./FormEntry.css";
 
 class FormEntry extends React.Component {
   render() {
-    const { icon, name, mandatory } = this.props;
+    const { icon, name, mandatory, onInput, value } = this.props;
     return (
       <div className="form-entry">
         <div className="form-entry-icon-wrapper">
@@ -12,7 +12,12 @@ class FormEntry extends React.Component {
             {name} {mandatory ? "*" : ""}{" "}
           </p>
         </div>
-        <input className="form-entry-input" />
+        <input
+          name={name}
+          value={value}
+          className="form-entry-input"
+          onInput={onInput}
+        />
       </div>
     );
   }
