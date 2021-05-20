@@ -1,0 +1,20 @@
+.developer-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.developer-link-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.developer-link-handle {
+  color: #9f8e63;
+  font-weight: 600;
+  font-size: 36px;
+  cursor: pointer;
+}

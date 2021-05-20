@@ -2,6 +2,7 @@ import React from "react";
 import ReactModal from "react-modal";
 import "./Main.css";
 import DeveloperInfo from "./DeveloperInfo";
+import DeveloperLink from "./DeveloperLink";
 
 class Main extends React.Component {
   constructor(props) {
@@ -21,6 +22,10 @@ class Main extends React.Component {
   render() {
     return (
       <div className="main-section">
+        <DeveloperLink
+          image="https://avatars.githubusercontent.com/u/55868588?v=4"
+          handle="suryaraj1"
+        />
         <hr className="main-section-divider" />
         <p className="main-section-text">
           Could not find what you were looking for?

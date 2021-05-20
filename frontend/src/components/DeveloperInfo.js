@@ -1,5 +1,6 @@
 import React from "react";
 import "./DeveloperInfo.css";
+import axios from "axios";
 import ReactModal from "react-modal";
 import FormEntry from "./FormEntry";
 import GithubLogo from "../static/iconfinder_github_317712.png";
@@ -64,6 +65,39 @@ class DeveloperInfo extends React.Component {
     });
   };
 
+  onSubmit = e => {
+    e.preventDefault();
+    const {
+      githubHandle,
+      codechefHandle,
+      linkedinHandle,
+      twitterHandle,
+      hackerrankHandle,
+      mediumHandle,
+    } = this.state;
+    if (githubHandle) {
+      axios
+        .post(
+          "/api/developers",
+          {
+            github_id: githubHandle,
+            codechef_id: codechefHandle,
+            twitter_id: twitterHandle,
+            linkedin_id: linkedinHandle,
+            medium_id: mediumHandle,
+            hackerrank_id: hackerrankHandle,
+          },
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        )
+        .then(response => console.log(response))
+        .catch(err => console.log(err));
+    }
+  };
+
   render() {
     const { showModal } = this.props;
     const {
@@ -124,7 +158,11 @@ class DeveloperInfo extends React.Component {
             <hr className="signup-divider" />
             <div className="signup-btn-container">
               <button className="signup-btn close">Close</button>
-              <button className="signup-btn submit" type="submit">
+              <button
+                className="signup-btn submit"
+                onClick={this.onSubmit}
+                type="submit"
+              >
                 Submit
               </button>
             </div>
