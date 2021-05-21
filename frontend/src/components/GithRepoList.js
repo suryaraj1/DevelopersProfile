@@ -7,6 +7,7 @@ class GitRepoList extends React.Component {
     const { repositories } = this.props;
     return (
       <div className="git-repo-list-wrapper">
+        <p className="git-repo-heading">Github repositories</p>
         {repositories.map(repository => {
           const { name, description, updated_at, html_url } = repository;
           return (
