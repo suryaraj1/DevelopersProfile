@@ -5,4 +5,10 @@
   font-weight: 600;
   margin-left: 30px;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.other-links-img {
+  margin-right: 10px;
 }

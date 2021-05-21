@@ -10,15 +10,19 @@ class DevProfile extends React.Component {
     super(props);
     this.state = {
       developer: {},
+      isDataLoaded: false,
     };
   }
 
   componentDidMount() {
+    const id = this.props.location.developerProps.id;
+    console.log(id);
     axios
-      .get("/api/developers/gcnit")
+      .get(`/api/developers/${id}`)
       .then(response => {
         this.setState({
           developer: response.data.user,
+          isDataLoaded: true,
         });
         console.log(this.state.developer.repos);
       })
@@ -26,12 +30,12 @@ class DevProfile extends React.Component {
   }
 
   render() {
-    const { developer } = this.state;
+    const { developer, isDataLoaded } = this.state;
     return (
       <div className="dev-profile">
         <Navbar />
         <Hero developer={developer} />
-        <GitRepoList repositories={developer.repos} />
+        {isDataLoaded && <GitRepoList repositories={developer.repos} />}
         <Footer />
       </div>
     );

@@ -16,6 +16,10 @@
   margin-bottom: 20px;
 }
 
+.git-repo-name a {
+  margin-left: 10px;
+}
+
 .git-repo-link {
   margin-right: 20px;
 }

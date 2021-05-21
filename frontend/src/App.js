@@ -9,7 +9,7 @@ class App extends React.Component {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/developers" component={DeveloperProfile} />
+          <Route exact path="/developers/:id" component={DeveloperProfile} />
         </Switch>
       </Router>
     );

@@ -15,6 +15,7 @@ class GitRepoList extends React.Component {
               name={name}
               description={description}
               updated_at={updated_at}
+              html_url={html_url}
             />
           );
         })}
