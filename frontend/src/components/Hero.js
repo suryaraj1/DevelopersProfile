@@ -7,6 +7,10 @@ import HackerrankLogo from "../static/iconfinder_160_Hackerrank_logo_logos_43732
 import LinkedinLogo from "../static/iconfinder_2018_social_media_popular_app_logo_linkedin_3225190.png";
 import TwitterLogo from "../static/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png";
 import MediumLogo from "../static/iconfinder_Circled_Medium_svg5_5279113.png";
+import CompanyLogo from "../static/business-24px.svg";
+import LocationLogo from "../static/location_on-24px.svg";
+import BlogLogo from "../static/insert_link-24px (1).svg";
+import OtherLinks from "./OtherLinks";
 
 class Hero extends React.Component {
   render() {
@@ -21,6 +25,9 @@ class Hero extends React.Component {
       medium_id,
       twitter_id,
       linkedin_id,
+      company,
+      blog,
+      location,
     } = developer;
     return (
       <div className="hero-section">
@@ -66,6 +73,11 @@ class Hero extends React.Component {
               img={TwitterLogo}
               alternateText="twitter-logo"
             />
+          </div>
+          <div className="hero-section-other-links">
+            <OtherLinks img={LocationLogo} info={location} />
+            <OtherLinks img={CompanyLogo} info={company} />
+            <OtherLinks img={BlogLogo} info={blog} />
           </div>
         </div>
       </div>
