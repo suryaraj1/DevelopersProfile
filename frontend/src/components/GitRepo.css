@@ -1,5 +1,10 @@
 .git-repo {
-  margin: 30px 30px;
+  margin: 70px 70px;
+}
+
+.git-repo-divider {
+  color: #d0cde1;
+  background-color: #d0cde1;
 }
 
 .git-repo-name {
@@ -7,10 +12,22 @@
   font-size: 37px;
   font-weight: 600;
   cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.git-repo-link {
+  margin-right: 20px;
 }
 
 .git-repo-updated-at {
   color: #3f3d56;
   opacity: 0.4;
   font-size: 24px;
+}
+
+.git-repo-description {
+  margin-bottom: 30px;
+  color: #3f3d56;
+  font-size: 32px;
 }
