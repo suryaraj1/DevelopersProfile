@@ -5,6 +5,11 @@
   align-items: center;
 }
 
+.developer-link {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .developer-link-img {
   height: 100px;
   width: 100px;
@@ -16,10 +21,10 @@
   color: #9f8e63;
   font-weight: 600;
   font-size: 36px;
-  cursor: pointer;
   margin-right: 20px;
 }
 
 .developer-link-icon {
   fill: #0768fa;
+  margin-left: 20px;
 }

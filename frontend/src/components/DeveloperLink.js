@@ -1,7 +1,7 @@
 import React from "react";
 import "./DeveloperLink.css";
-import LinkLogo from "../static/north_east-24px.svg";
 import { Link } from "react-router-dom";
+import { ReactComponent as LinkLogo } from "../static/north_east-24px.svg";
 
 class DeveloperLink extends React.Component {
   render() {
@@ -19,7 +19,7 @@ class DeveloperLink extends React.Component {
               },
             }}
           >
-            <img src={LinkLogo} className="developer-link-icon" />
+            <LinkLogo src={LinkLogo} className="developer-link-icon" />
           </Link>
         </p>
       </div>

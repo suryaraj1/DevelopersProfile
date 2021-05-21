@@ -8,7 +8,6 @@ class GitRepo extends React.Component {
     console.log(html_url);
     return (
       <div className="git-repo">
-        <hr className="git-repo-divider" />
         <p className="git-repo-name">
           {name}
           <a target="__blank" href={html_url}>
