@@ -1,18 +1,17 @@
 import React from "react";
-import Header from "./components/Header";
-import SearchBar from "./components/SearchBar";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./Home";
+import DeveloperProfile from "./DevProfile";
 
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <SearchBar />
-        <Main />
-        <Footer />
-      </div>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/developers" component={DeveloperProfile} />
+        </Switch>
+      </Router>
     );
   }
 }

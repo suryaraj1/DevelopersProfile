@@ -9,7 +9,7 @@
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .developer-link-handle {
@@ -17,4 +17,9 @@
   font-weight: 600;
   font-size: 36px;
   cursor: pointer;
+  margin-right: 20px;
+}
+
+.developer-link-icon {
+  fill: #0768fa;
 }

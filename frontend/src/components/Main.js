@@ -3,13 +3,28 @@ import ReactModal from "react-modal";
 import "./Main.css";
 import DeveloperInfo from "./DeveloperInfo";
 import DeveloperLink from "./DeveloperLink";
+import DeveloperList from "./DeveloperList";
+import axios from "axios";
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       showModal: false,
+      developers: [],
     };
+  }
+
+  componentDidMount() {
+    axios
+      .get("/api/developers")
+      .then(response => {
+        console.log(response.data);
+        this.setState({
+          developers: response.data,
+        });
+      })
+      .catch(err => console.log(err));
   }
 
   modalHandler = () => {
@@ -20,12 +35,10 @@ class Main extends React.Component {
   };
 
   render() {
+    const { developers } = this.state;
     return (
       <div className="main-section">
-        <DeveloperLink
-          image="https://avatars.githubusercontent.com/u/55868588?v=4"
-          handle="suryaraj1"
-        />
+        <DeveloperList developers={developers} />
         <hr className="main-section-divider" />
         <p className="main-section-text">
           Could not find what you were looking for?

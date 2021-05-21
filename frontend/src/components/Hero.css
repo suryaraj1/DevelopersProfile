@@ -1,0 +1,35 @@
+.hero-section {
+  height: 510px;
+  background: #e5e5e5;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero-section-img {
+  height: 330px;
+  width: 330px;
+  border-radius: 50%;
+  margin-left: 40px;
+  right: 70px;
+  margin-top: 80px;
+}
+
+.hero-section-information {
+  margin-top: 100px;
+}
+
+.hero-section-name {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.hero-section-bio {
+  font-weight: normal;
+  font-size: 24px;
+  margin-top: 32px;
+}
+
+.hero-section-profile-links {
+  display: flex;
+  margin-top: 30px;
+}
