@@ -1,5 +1,5 @@
 .hero-section {
-  height: 510px;
+  height: auto;
   background: #e5e5e5;
   display: flex;
   justify-content: space-evenly;
@@ -11,12 +11,12 @@
   border-radius: 50%;
   margin-left: 40px;
   position: relative;
-  left: 100px;
-  margin-top: 80px;
+  left: 150px;
+  margin-top: 100px;
 }
 
 .hero-section-information {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .hero-section-name {
@@ -34,6 +34,8 @@
 .hero-section-profile-links {
   display: flex;
   margin-top: 30px;
+  position: relative;
+  right: 10px;
 }
 
 .hero-section-other-links {
@@ -41,4 +43,5 @@
   margin-top: 30px;
   position: relative;
   right: 28px;
+  margin-bottom: 30px;
 }

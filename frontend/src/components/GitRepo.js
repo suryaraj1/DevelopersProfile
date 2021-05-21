@@ -13,7 +13,9 @@ class GitRepo extends React.Component {
           <a target="__blank" href={html_url}>
             <LinkLogo className="git-repo-link" src={LinkLogo} />
           </a>
-          <span className="git-repo-updated-at">Updated on {updated_at}</span>
+          <span className="git-repo-updated-at">
+            Updated on {new Date(updated_at).toDateString()}
+          </span>
         </p>
         {description !== null ? (
           <p className="git-repo-description">{description}</p>

@@ -7,7 +7,7 @@ class SocialLink extends React.Component {
     return (
       <div className="social-link-wrapper">
         {url !== "" ? (
-          <a href={url}>
+          <a target="__blank" href={url}>
             <img src={img} alt={alternateText} />
           </a>
         ) : null}

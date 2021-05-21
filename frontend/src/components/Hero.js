@@ -11,6 +11,7 @@ import CompanyLogo from "../static/business-24px.svg";
 import LocationLogo from "../static/location_on-24px.svg";
 import BlogLogo from "../static/insert_link-24px (1).svg";
 import OtherLinks from "./OtherLinks";
+import GitHubCalender from "react-github-calendar";
 
 class Hero extends React.Component {
   render() {
@@ -43,7 +44,9 @@ class Hero extends React.Component {
             />
             <SocialLink
               url={
-                codechef_id !== "" ? `https://codechef.com/${codechef_id}` : ""
+                codechef_id !== ""
+                  ? `https://codechef.com/users/${codechef_id}`
+                  : ""
               }
               img={CodechefLogo}
               alternateText="codechef-logo"
@@ -79,6 +82,10 @@ class Hero extends React.Component {
             <OtherLinks img={CompanyLogo} info={company} />
             <OtherLinks img={BlogLogo} info={blog} />
           </div>
+          <GitHubCalender
+            className="hero-section-calender"
+            username={developer.id}
+          />
         </div>
       </div>
     );
