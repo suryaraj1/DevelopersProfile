@@ -1,6 +1,6 @@
 import React from "react";
 import "./GitRepo.css";
-import LinkLogo from "../static/north_east-24px.svg";
+import { ReactComponent as LinkLogo } from "../static/north_east-24px.svg";
 
 class GitRepo extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class GitRepo extends React.Component {
         <p className="git-repo-name">
           {name}
           <a target="__blank" href={html_url}>
-            <img className="git-repo-link" src={LinkLogo} />
+            <LinkLogo className="git-repo-link" src={LinkLogo} />
           </a>
           <span className="git-repo-updated-at">Updated on {updated_at}</span>
         </p>

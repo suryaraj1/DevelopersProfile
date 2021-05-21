@@ -66,7 +66,6 @@ class DeveloperInfo extends React.Component {
   };
 
   onSubmit = e => {
-    e.preventDefault();
     const {
       githubHandle,
       codechefHandle,
