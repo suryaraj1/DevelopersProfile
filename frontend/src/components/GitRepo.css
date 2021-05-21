@@ -1,0 +1,16 @@
+.git-repo {
+  margin: 30px 30px;
+}
+
+.git-repo-name {
+  color: #0768fa;
+  font-size: 37px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.git-repo-updated-at {
+  color: #3f3d56;
+  opacity: 0.4;
+  font-size: 24px;
+}

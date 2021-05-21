@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import GitRepoList from "./components/GithRepoList";
 
 class DevProfile extends React.Component {
   constructor(props) {
@@ -18,7 +19,6 @@ class DevProfile extends React.Component {
         this.setState({
           developer: response.data.user,
         });
-        console.log(this.state.developer);
       })
       .catch(err => console.log(err));
   }
@@ -29,6 +29,7 @@ class DevProfile extends React.Component {
       <div className="dev-profile">
         <Navbar />
         <Hero developer={developer} />
+        <GitRepoList repositories={developer.repos} />
       </div>
     );
   }
