@@ -12,6 +12,7 @@ import LocationLogo from "../static/location_on-24px.svg";
 import BlogLogo from "../static/insert_link-24px (1).svg";
 import OtherLinks from "./OtherLinks";
 import GitHubCalender from "react-github-calendar";
+import ReactTooltip from "react-tooltip";
 
 class Hero extends React.Component {
   render() {
@@ -85,7 +86,11 @@ class Hero extends React.Component {
           <GitHubCalender
             className="hero-section-calender"
             username={developer.id}
-          />
+            blockSize={9}
+            blockMargin={2}
+          >
+            <ReactTooltip delayShow={50} html />
+          </GitHubCalender>
         </div>
       </div>
     );
