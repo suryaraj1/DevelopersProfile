@@ -66,6 +66,7 @@ class DeveloperInfo extends React.Component {
   };
 
   onSubmit = e => {
+    e.preventDefault();
     const {
       githubHandle,
       codechefHandle,
@@ -92,7 +93,10 @@ class DeveloperInfo extends React.Component {
             },
           }
         )
-        .then(response => console.log(response))
+        .then(response => {
+          console.log(response);
+          window.location = "/";
+        })
         .catch(err => console.log(err));
     }
   };
