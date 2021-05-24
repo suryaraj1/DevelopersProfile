@@ -40,3 +40,15 @@
   box-shadow: 0 20px 30px -11px rgb(31 35 65 / 37%);
   transform: translate(0px, -5px);
 }
+
+@media screen and (max-width: 500px) {
+  .main-section-text {
+    font-size: 18px;
+  }
+
+  .main-section-btn {
+    font-size: 14px;
+    height: 40px;
+    width: 160px;
+  }
+}

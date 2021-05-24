@@ -13,3 +13,13 @@
   font-weight: 600;
   font-size: 25px;
 }
+
+@media screen and (max-width: 500px) {
+  .footer-text {
+    font-size: 12px;
+  }
+
+  .footer-img {
+    height: 15px;
+  }
+}

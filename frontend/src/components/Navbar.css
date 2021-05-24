@@ -19,3 +19,14 @@
   margin: 34px;
   color: #ffffff;
 }
+
+@media screen and (max-width: 500px) {
+  .navbar-section {
+    height: 100px;
+  }
+
+  .navbar-left-section,
+  .navbar-right-section {
+    font-size: 14px;
+  }
+}

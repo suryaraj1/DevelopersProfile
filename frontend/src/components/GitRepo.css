@@ -38,3 +38,25 @@
   font-size: 32px;
   font-weight: 400;
 }
+
+@media screen and (max-width: 500px) {
+  .git-repo {
+    margin: 20px;
+  }
+
+  .git-repo-name {
+    font-size: 23px;
+  }
+
+  .git-repo-link {
+    height: 14px;
+  }
+
+  .git-repo-description {
+    font-size: 17px;
+  }
+
+  .git-repo-updated-at {
+    font-size: 15px;
+  }
+}

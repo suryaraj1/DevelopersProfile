@@ -1,12 +1,7 @@
 .developer-link {
   display: flex;
-  justify-content: center;
   margin-top: 100px;
   align-items: center;
-}
-
-.developer-link {
-  display: flex;
   justify-content: flex-start;
 }
 
@@ -27,4 +22,29 @@
 .developer-link-icon {
   fill: #0768fa;
   margin-left: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .developer-link {
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  .developer-link-img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .developer-link-handle {
+    font-size: 16px;
+    position: relative;
+    right: 10px;
+  }
+
+  .developer-link-icon {
+    height: 10px;
+    position: relative;
+    right: 20px;
+  }
 }

@@ -12,7 +12,7 @@ class Header extends React.Component {
             <p>Repository</p>
           </div>
           <div className="header-image">
-            <img src={HeaderImage} />
+            <img src={HeaderImage} className="image" />
           </div>
         </div>
         <div className="header-lower">

@@ -12,3 +12,16 @@
 .other-links-img {
   margin-right: 10px;
 }
+
+@media screen and (max-width: 500px) {
+  .other-links {
+    font-size: 10px;
+    margin-left: 20px;
+  }
+
+  .other-links-img {
+    height: 12px;
+    width: 12px;
+    margin-right: 4px;
+  }
+}

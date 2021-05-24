@@ -36,3 +36,21 @@
   cursor: pointer;
   margin-left: 10px;
 }
+
+@media screen and (max-width: 500px) {
+  .search-bar-wrapper {
+    width: 80%;
+    height: 38px;
+  }
+  .search-bar-input {
+    font-size: 12px;
+    height: 24px;
+    margin: 10px;
+  }
+  .search-bar-img {
+    height: 18px;
+    width: 18px;
+    position: relative;
+    right: 10px;
+  }
+}

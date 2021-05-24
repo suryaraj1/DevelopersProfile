@@ -83,14 +83,6 @@ class Hero extends React.Component {
             <OtherLinks img={CompanyLogo} info={company} />
             <OtherLinks img={BlogLogo} info={blog} />
           </div>
-          <GitHubCalender
-            className="hero-section-calender"
-            username={developer.id}
-            blockSize={9}
-            blockMargin={2}
-          >
-            <ReactTooltip delayShow={50} html />
-          </GitHubCalender>
         </div>
       </div>
     );

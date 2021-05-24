@@ -39,3 +39,32 @@
   height: 2px;
   color: #d0cde1;
 }
+
+@media screen and (max-width: 500px) {
+  .header {
+    width: 100%;
+  }
+
+  .header-upper {
+    flex-direction: column-reverse;
+  }
+  .header-text {
+    font-size: 35px;
+    width: 300px;
+  }
+  .header-image {
+    height: 100px;
+  }
+
+  .image {
+    height: 150px;
+    width: 190px;
+  }
+
+  .header-lower {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1210px) {
+}

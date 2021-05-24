@@ -3,3 +3,10 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 180px;
 }
+
+@media screen and (max-width: 500px) {
+  .developer-list {
+    width: 90%;
+    column-gap: 20px;
+  }
+}
