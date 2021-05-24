@@ -9,7 +9,7 @@ class FormEntry extends React.Component {
         <div className="form-entry-icon-wrapper">
           <img className="form-entry-icon" src={icon} />
           <p className="form-entry-icon-name">
-            {name} {mandatory ? "*" : ""}{" "}
+            {name} {mandatory ? "*" : ""}
           </p>
         </div>
         <input

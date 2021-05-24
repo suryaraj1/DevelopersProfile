@@ -79,3 +79,27 @@
   box-shadow: 0 20px 30px -11px rgb(31 35 65 / 37%);
   transform: translate(0px, -5px);
 }
+
+@media screen and (max-width: 500px) {
+  .signup-section {
+    width: 90%;
+    height: 108%;
+  }
+
+  .signup-section-text {
+    position: relative;
+    left: 0px;
+    font-size: 20px;
+    top: 30px;
+  }
+
+  .signup-section-upper {
+    width: 70%;
+  }
+
+  .signup-btn {
+    height: 35px;
+    font-size: 14px;
+    width: 120px;
+  }
+}

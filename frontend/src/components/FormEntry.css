@@ -31,3 +31,30 @@
 .form-entry-input:focus {
   border: 1px solid #7c639f;
 }
+
+@media screen and (max-width: 500px) {
+  .form-entry-input {
+    width: 250px;
+    height: 40px;
+    position: relative;
+    left: 135px;
+  }
+
+  .form-entry-icon-wrapper {
+    margin-bottom: 5px;
+    position: relative;
+    left: 140px;
+    margin: 5px;
+  }
+
+  .form-entry-icon-name {
+    font-size: 13px;
+  }
+
+  .form-entry-icon {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
