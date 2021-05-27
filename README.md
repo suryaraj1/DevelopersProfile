@@ -1,13 +1,14 @@
 # Developer's Profile
 
 A fullstack app where any developer can visit and create a repository with all their online identities and also of their connections ✨
-The app is delpoyed to <a href="https://developer-profile-app.herokuapp.com/">Heroku App</a>.
+The app is deployed to ➡️ <a href="https://developer-profile-app.herokuapp.com/">Heroku App</a>.
+The project uses <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" width="30px" align=""/> API to fetch profile data.
 
-## Motivation
+## Motivation 🚀
 
-Always wanted a one stop for all online profiles to stop myself from scavening around stalking peeps 😅
+Always wanted a one stop for all online profiles to prevent myself from scavenging around stalking peeps 😅
 
-## Tech Stack 
+## Tech Stack 💻
 <p align="left">
   <img width="60px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" align="center" />
   &nbsp
@@ -17,3 +18,4 @@ Always wanted a one stop for all online profiles to stop myself from scavening a
   &nbsp
   <img width="30px" src="https://seeklogo.com/images/H/heroku-logo-B774A78667-seeklogo.com.png" align="center"/>
 </p>
+
