@@ -3,6 +3,9 @@
 A fullstack app where any developer can visit and create a repository with all their online identities and also of their connections ✨
 The app is deployed to ➡️ <a href="https://developer-profile-app.herokuapp.com/">Heroku App</a>.
 The project uses <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" width="30px" align=""/> API to fetch profile data.
+<br />
+<br />
+<strong>Project credits 👉 <a target="_blank" href="https://workat.tech/"><img width="66px" src="https://www.recursionnitd.in/static/image/sponsor/workat-tech.png" align="center"/></a></strong>
 
 ## Motivation 🚀
 
