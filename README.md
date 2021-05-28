@@ -16,6 +16,8 @@ Always wanted a one stop for all online profiles to prevent myself from scavengi
 
 ## Tech Stack 💻
 <p align="left">
+  <img width="30px" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" align="center" />
+  &nbsp
   <img width="63px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" align="center" />
   &nbsp
   <img width="60px" src="https://cdn.worldvectorlogo.com/logos/react-router.svg" align="center"/>
