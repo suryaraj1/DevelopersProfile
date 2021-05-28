@@ -5,7 +5,7 @@ The app is deployed to ➡️ <a href="https://developer-profile-app.herokuapp.c
 The project uses <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" width="30px" align=""/> API to fetch profile data.
 <br />
 <br />
-<strong>Project credits 👉 <a target="_blank" href="https://workat.tech/"><img width="66px" src="https://www.recursionnitd.in/static/image/sponsor/workat-tech.png" align="center"/></a></strong> 
+<strong>Project credits 👉 <a target="_blank" href="https://workat.tech/project-ideas/article/developer-profile-4razgyhfeowq"><img width="66px" src="https://www.recursionnitd.in/static/image/sponsor/workat-tech.png" align="center"/></a></strong> 
 <br />
 <br />
 <img align="center" src="https://media.giphy.com/media/Qi7lL7sTMEc4BWh7V7/giphy.gif"/>
